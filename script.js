@@ -57,3 +57,14 @@ document.addEventListener('scroll', function() {
         document.body.classList.remove('footer-reached');
     }
 });
+
+function alertt(){
+    Swal .fire({
+        icon: 'info',
+        title: 'Rules',
+        text: 'you must read the rules',
+        timer: 2000,
+        showConfirmButton: false,
+        allowOutsideClick: false
+    });
+}

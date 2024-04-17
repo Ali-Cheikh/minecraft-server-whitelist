@@ -130,7 +130,6 @@ form {
 
 .button-checkbox label {
     display: flex;
-
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -141,22 +140,6 @@ form {
 
 .button-checkbox label i {
     margin-right: 5px;
-}
-
-.button-checkbox input[type="checkbox"]:checked+label {
-    border-color: #fff;
-    max-width: 20px !important;
-}
-
-.button-checkbox input[type="checkbox"]:checked+label.btny {
-    background-color: #28a745;
-    color: #fff;
-    max-width: 20px !important;
-}
-
-.button-checkbox input[type="checkbox"]:checked+label.btno {
-    background-color: #dc3545;
-    color: #fff;
 }
 
 select {

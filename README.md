@@ -1,7 +1,6 @@
 # Server Whitelist Application
 
-![Server Whitelist Application Logo](src/logo.png)
-
+<img src="src/computer.gif" alt="Computer" width="500" align="right"/>
 Server Whitelist Application is a web form designed for users to apply for whitelisting on a Minecraft server.
 
 ## Features
@@ -10,11 +9,6 @@ Server Whitelist Application is a web form designed for users to apply for white
 - **Responsive Design**: Works seamlessly across various devices.
 - **Acceptance of Rules**: Includes a checkbox to confirm the acceptance of server rules.
 - **Additional Information**: Allows users to provide additional information along with their application.
-
-<div align="right">
-  <img src="phone_screen_image.jpg" alt="Phone Screen" width="300"/>
-  <img src="computer_image.jpg" alt="Computer" width="300"/>
-</div>
 
 ## Technologies Used
 
@@ -39,11 +33,15 @@ Server Whitelist Application is a web form designed for users to apply for white
 
 ## Contact Information
 
-- **Discord**: YourDiscordName
+- **Discord**: [Ali Cheikh](https://discord.gg/jRbrRwEzjH)
 - **Planet Minecraft**: YourPlanetMinecraftName
 - **Email**: example@example.com
 
 ## Support
+
+<div style="transform: rotate(-90deg);">
+  <img src="src/phone.png" alt="Phone Screen" width="300" align="right">
+</div>
 
 - [FAQs](#)
 - [Terms of Service](#)
