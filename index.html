@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Whitelist Application</title>
+    <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="google_translate_element" style="float: right;"></div>
+    <br><br>
+    <header>
+        <br><br>
+        <h1 style="color: red; text-align: center; text-shadow: black 1px 2px 40px;">Server <span style="color: wheat">Whitelist</span> Application</h1>
+    </header>
+    <center>
+        <form id="whitelistForm" class="form" >
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="username">Minecraft Name  :</label>
+                    <input type="text" class="form-control alert-dark bg-dark text-light" id="username" name="username" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="discordName">Discord Name:</label>
+                    <input type="text" class="form-control alert-dark bg-dark text-light" id="discordName" name="discordName" required>
+                </div>
+            </div>
+            <hr>
+            <center>
+                <div class="form-group col-md-4">
+                    <label for="premium">Minecraft Premium or Cracked ?</label>
+                    <select class="form-control bg-dark text-light" id="premium" name="platform" required>
+                        <option value="" >Select Option</option>
+                        <option value="premium">Premium <i class="fas fa-gem"></i></option>
+                        <option value="Cracked">Cracked <i class="fas fa-compact-disc"></i></option>
+                    </select>
+                </div>
+            </center>
+            <br>
+            <hr>
+            <!-- Have you been banned section -->
+            <center>
+                <div class="form-group col-md-7" id="bannedReasonContainer" style="display: none;">
+                    <label for="bannedReason">Why?</label>
+                    <input type="text" class="form-control bg-dark text-light" id="bannedReason" name="bannedReason" disabled>
+                </div>
+            </center>
+            <br><br>
+            <!-- Age, Server Playtime, Minecraft Playtime -->
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="age">Your Age  :</label>
+                    <select class="form-control  bg-warning text-dark" id="age" name="age" required>
+                        <option value="" disabled>Select Age</option>
+                        <option value="12-16">12 - 16</option>
+                        <option value="17-20">17 - 20</option>
+                        <option value="21-25">21 - 25</option>
+                        <option value="26-30">26 - 30</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="serverPlaytime">Server Playtime  :</label>
+                    <select class="form-control bg-dark text-light" id="serverPlaytime" name="serverPlaytime" required>
+                        <option value="" disabled>Select Playtime</option>
+                        <option value="0">didn't join yet ?</option>
+                        <option value="1">1h</option>
+                        <option value="1.30">1:30h</option>
+                        <option value="2">2h</option>
+                        <option value="2.30">2:30h</option>
+                        <option value="3">3h</option>
+                        <option value="3.30">3:30h</option>
+                        <option value="4">4h</option>
+                        <option value="4.30">4:30h</option>
+                        <option value="5+">5h+</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="minecraftPlaytime">Minecraft PlayPeriod  :</label>
+                    <input type="date" class="form-control bg-warning text-dark" id="minecraftPlaytime" name="minecraftPlaytime"
+                        placeholder="Example: From what year " required>
+                </div>
+            </div>
+            <br><br>
+    
+            <div class="form-group">
+                <fieldset>
+                    <legend class="text-center">Did you accept the rules?</legend>
+                    <div class="button-checkbox-group ">
+                        <input type="checkbox" class="d-none" id="acceptRulesYes" name="acceptRules" value="yes">
+                        <label class="button-checkbox btn btn-primary" for="acceptRulesYes"><i class="fas fa-check-circle"></i></label>
+                        <input type="checkbox" class="d-none" id="acceptRulesNo" name="acceptRules" value="no">
+                        <label class="button-checkbox btn btn-primary" for="acceptRulesNo"><i class="fas fa-times-circle"></i></label>
+                        <a href="https://discord.com/channels/1229181256206389268/1229192519804260375" target="_blank" class="btny btn btn-warning"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <br><br>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Info:</label>
+                <textarea class="form-control bg-dark text-light" id="additionalInfo" name="additionalInfo"></textarea>
+            </div><br><hr>
+            <button type="submit" class="btn minecraft">SUBMIT</button>
+        </form>
+        <br><hr>
+        <div id="successMessage" style="display: none;">
+            <p>Your application has been submitted successfully!</p>
+            <button class="btn btn-success">
+                <a href="https://mediafire/mods.com" class="a1"><i class="fas fa-download btn-icon"></i>Download Mods</a>
+            </button>
+        </div>
+        
+    </center>
+    <br><br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-discord"></i> Discord: YourDiscordName</li>
+                        <li><i class="fab fa-planet-moon"></i> Planet Minecraft: YourPlanetMinecraftName</li>
+                        <li><i class="far fa-envelope"></i> Email: example@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Donate</h5>
+                    <p>Support the server by donating!</p>
+                    <a href="src/payto.pdf" class="btn btn-primary">Donate Now</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </footer>
+    <div class=" fixed-bottom fixed-element">
+        <center><span style="color: #28a745;">© 2024 <a href="bit.ly/Aliportfolio"> Ali Cheikh.</a>  <span style="color: rgb(241, 86, 86);">Tunisian server</span> All rights reserved.</span></center>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>
