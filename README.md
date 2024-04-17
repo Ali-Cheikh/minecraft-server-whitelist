@@ -30,6 +30,8 @@ Server Whitelist Application is a web form designed for users to apply for white
 2. Accept the server rules by clicking on the appropriate checkbox.
 3. Click the "SUBMIT" button to submit your application.
 4. Upon successful submission, you'll receive a success message.
+5. after successfully submitting, you will see the download mods button to get your mods from.
+6. If you have any questions or issues, please contact the server owner.
 
 ## Contact Information
 
