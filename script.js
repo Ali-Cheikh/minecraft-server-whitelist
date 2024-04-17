@@ -27,7 +27,7 @@ function submitFormToGoogleSheets() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success!',
-                    text: `<h3 style="color:white">Your application is submitted.<u> Thank you!</u></h3>`,
+                    html: `<h3 style="color:white">Your application is submitted.<u> Thank you!</u></h3>`,
                     timer: 2000,
                     background: "url(src/download.png)",
                     timerProgressBar: true,
