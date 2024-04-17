@@ -34,8 +34,7 @@ Server Whitelist Application is a web form designed for users to apply for white
 ## Contact Information
 
 - **Discord**: [Ali Cheikh](https://discord.gg/jRbrRwEzjH)
-- **Planet Minecraft**: YourPlanetMinecraftName
-- **Email**: example@example.com
+- **Planet Minecraft**: unexpected14
 
 ## Support
 
