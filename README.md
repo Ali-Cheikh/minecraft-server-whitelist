@@ -53,5 +53,5 @@ Server Whitelist Application is a web form designed for users to apply for white
 Support the server by donating! [Donate Now](src/payto.pdf)
 
 ---
-
+made this for fun but might be the new whitelist for [Play.minecraft.tn](https://minecraft.tn)
 © 2024 [Ali Cheikh](bit.ly/Aliportfolio). Tunisian server. All rights reserved.
