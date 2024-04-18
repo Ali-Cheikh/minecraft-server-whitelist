@@ -11,7 +11,7 @@ document.getElementById('whitelistForm').addEventListener('submit', function (ev
 
 
 function submitFormToGoogleSheets() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz95y0MUDRFlr0iAAXkceJBXNasGv5EuoQJVzvMhqr9K3dvya-vwPfY14uY2qvoJyS3/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxb7QrRcEKCjMllb76hUgNjbVUkbd8a5bJW7cY-HzCedHq-o-68RIhvWBQy4r72bg/exec';
     const form = document.getElementById('whitelistForm');
     Swal.fire({
         icon: 'info',
