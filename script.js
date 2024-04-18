@@ -67,8 +67,12 @@ function alertt(){
     Swal.fire({
         icon: 'info',
         title: 'Rules',
-        text: 'you must read the rules',
-        html: `<h5><a href="" class="a1">#rules</a></h5>` ,
+        html: `
+        <h6>you must read the rules</h6>
+        <h5>
+        <a href="" class="a1">#rules</a>
+        </h5>
+        ` ,
         timer: 2000,
         showConfirmButton: false,
         allowOutsideClick: false
