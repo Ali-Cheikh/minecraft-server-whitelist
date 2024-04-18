@@ -27,8 +27,13 @@ function submitFormToGoogleSheets() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success!',
-                    html: `<h3 style="color:white">Your application is submitted.<u> Thank you!</u></h3>`,
-                    timer: 2000,
+                    html: `
+                    <h3 style="color:white">
+                    Your application is submitted.
+                    <u> Thank you!</u>
+                    </h3>
+                    `,
+                    timer: 3000,
                     background: "url(src/download.png)",
                     timerProgressBar: true,
                     showConfirmButton: false,
@@ -59,10 +64,11 @@ document.addEventListener('scroll', function() {
 });
 
 function alertt(){
-    Swal .fire({
+    Swal.fire({
         icon: 'info',
         title: 'Rules',
         text: 'you must read the rules',
+        html: `<h5><a href="" class="a1">#rules</a></h5>` ,
         timer: 2000,
         showConfirmButton: false,
         allowOutsideClick: false
