@@ -8,7 +8,7 @@ document.getElementById('whitelistForm').addEventListener('submit', function (ev
     document.getElementById('whitelistForm').reset(); // Reset form fields
     document.getElementById('successMessage').style.display = 'block'; // Show success message
 });
-
+ 
 
 function submitFormToGoogleSheets() {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxb7QrRcEKCjMllb76hUgNjbVUkbd8a5bJW7cY-HzCedHq-o-68RIhvWBQy4r72bg/exec';
